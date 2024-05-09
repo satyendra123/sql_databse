@@ -8,3 +8,6 @@ CREATE TABLE new_table LIKE fastags;
 SELECT COUNT(*) FROM your_table_name WHERE engaged = '1';
 SELECT COUNT(*) FROM invalidtaglogs WHERE tag = '30355CD7842ADE4000000007'; ye btayega ki is number or tag ki gadhi kitni bar aayi hai
 
+#step-4 mere pass ek created_at table hai aur mujhe 1 may se 31 may ke bich 
+SELECT * FROM invalidtaglogs
+WHERE created_at >= '2024-05-01' AND created_at <= '2024-05-31';
