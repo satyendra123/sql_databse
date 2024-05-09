@@ -1,5 +1,10 @@
 #step-1 man lo humare database me ek table hai hume is table ka data dusre table me rakhna with same name and property so hum is query ka use karenge  isme jo fastags_backup hai ye new table hai aur jo fastags hai ye old table hai
 CREATE TABLE fastags_backup AS SELECT * FROM fastags;
 
-#stwp-2 man lo hume ek new table banana hai with the same properties like the other table so we will do like this
+#step-2 man lo hume ek new table banana hai with the same properties like the other table so we will do like this
 CREATE TABLE new_table LIKE fastags;
+
+#step-3 i want to count the number of 1's in the complete table
+SELECT COUNT(*) FROM your_table_name WHERE engaged = '1';
+SELECT COUNT(*) FROM invalidtaglogs WHERE tag = '30355CD7842ADE4000000007'; ye btayega ki is number or tag ki gadhi kitni bar aayi hai
+
