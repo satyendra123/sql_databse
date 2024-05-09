@@ -1,0 +1,2 @@
+#step-1 man lo humare database me ek table hai hume is table ka data dusre table me rakhna with same name and property so hum is query ka use karenge  isme jo fastags_backup hai ye new table hai aur jo fastags hai ye old table hai
+CREATE TABLE fastags_backup AS SELECT * FROM fastags;
