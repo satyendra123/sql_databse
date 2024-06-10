@@ -13,3 +13,7 @@ SELECT COUNT(*) FROM invalidtaglogs WHERE tag = '30355CD7842ADE4000000007'; ye b
 #step-4 mere pass ek created_at table hai aur mujhe 1 may se 31 may ke bich 
 SELECT * FROM invalidtaglogs
 WHERE created_at >= '2024-05-01' AND created_at <= '2024-05-31';
+
+#step-5 man lo ki mai chahta hu ki abhi parking me kitni gadhiya khadi hai andar to iske liye mai logic lgaunga ki validtaglogs table me agar entrydatetime me data hai aur exitdatetime jo hai wo null hai to iska mtlb ki gadhi entry hui hai par exit nahi hui hai means abhi ye gadhi parking me hi khadi hai
+
+SELECT * FROM validtaglogs WHERE DATE(entrydatetime) = '2024-06-05' AND exitdatetime IS NULL; means mai check kar rha hu isme ki 5 june ko kitni gadhi parking me entry ki hai lekin exit nahi hui hai..
